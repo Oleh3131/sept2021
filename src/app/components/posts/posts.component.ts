@@ -11,11 +11,11 @@ export class PostsComponent implements OnInit {
 
   posts: IPost[];
 
-  constructor(private PostService:PostService) { }
+  constructor(private postService:PostService) { }
 
   ngOnInit(): void {
 
-    this.PostService.getPosts().subscribe(value => this.posts = value);
+    this.postService.getPosts().subscribe(value => this.posts = value);
 
   }
 
