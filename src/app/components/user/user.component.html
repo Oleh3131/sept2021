@@ -1,7 +1,23 @@
 <div>
-    id: {{user.id}}
-    name:{{user.name}}
-    username:{{user.username}}
-    email:{{user.email}}
-    address:{{user.address.street}}
+  <h1>id: {{user.id}}</h1>
+  <h3>name:{{user.name}}</h3>
+  <h3>username:{{user.username}}</h3>
+  <h3>email:{{user.email}}</h3>
+  <ol>address:
+    <li> street:{{user.address.street}}</li>
+    <li> suite:{{user.address.suite}}</li>
+    <li> city:{{user.address.city}}</li>
+    <li> zipcode:{{user.address.zipcode}}</li>
+  </ol>
+  <ul>geo:
+    <li>lat:{{user.address.geo.lat}}</li>
+    <li>lng:{{user.address.geo.lng}}</li>
+  </ul>
+  <h3>phone:{{user.phone}}</h3>
+  <h3>website:{{user.website}}</h3>
+  <ul>company:
+    <li>name:{{user.company.name}}</li>
+    <li>catchPhrase:{{user.company.catchPhrase}}</li>
+    <li>bs:{{user.company.bs}}</li>
+  </ul>
 </div>
