@@ -1,0 +1,5 @@
+.mainUsers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+}
