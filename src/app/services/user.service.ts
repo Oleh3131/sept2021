@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 
 
 import {urls} from "../contains";
-import {UserInterface} from "../interfaces";
+import {UserDetailsInterface, UserInterface} from "../interfaces";
 
 @Injectable({
   providedIn: 'root'
@@ -20,9 +20,9 @@ export class UserService {
 
   }
 
-  getUser(id:number):Observable<UserInterface>{
+  getUser(id:string):Observable<UserDetailsInterface>{
 
-    return this.http.get<UserInterface>(urls.users + '/' + id);
+    return this.http.get<UserDetailsInterface>(urls.users + '/' + id);
 
   }
 
