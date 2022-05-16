@@ -1,2 +1,2 @@
-export interface Post.Interface {
+export interface PostInterface {
 }

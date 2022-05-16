@@ -1,2 +1,2 @@
-export interface Comment.Interface {
+export interface CommentInterface {
 }

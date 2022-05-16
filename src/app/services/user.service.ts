@@ -2,8 +2,9 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 
-import {UserInterface} from "../interfaces/user.interface";
+
 import {urls} from "../contains";
+import {UserInterface} from "../interfaces";
 
 @Injectable({
   providedIn: 'root'
