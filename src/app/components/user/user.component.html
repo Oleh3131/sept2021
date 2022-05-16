@@ -9,4 +9,9 @@
     <li> city:{{user.address.city}}</li>
     <li> zipcode:{{user.address.zipcode}}</li>
   </ol>
+  <hr>
+<!--  <a routerLink="user_details/{{user.id}}" >DETAILS</a>-->
+
+  <a [routerLink]="['user_details',user.id]">DETAILS</a>
+
 </div>

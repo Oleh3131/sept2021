@@ -11,7 +11,7 @@ import {UserInterface} from "../../interfaces";
 export class UserComponent implements OnInit {
 
   @Input()
-  user: UserInterface[];
+  user: UserInterface;
 
   constructor() { }
 
