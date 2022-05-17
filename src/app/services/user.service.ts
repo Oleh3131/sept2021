@@ -20,7 +20,7 @@ export class UserService {
 
   }
 
-  getUser(id:string):Observable<UserDetailsInterface>{
+  getUser(id:number):Observable<UserDetailsInterface>{
 
     return this.http.get<UserDetailsInterface>(urls.users + '/' + id);
 
