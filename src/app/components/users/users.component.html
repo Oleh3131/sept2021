@@ -1,6 +1,8 @@
 <div class="users">
-  <app-user *ngFor="let user of users" [user]="user"></app-user>
+  <app-user *ngFor="let user of users" [user]="user" class="user"></app-user>
 </div>
 
+<div class="mainUserDetails">
+  <router-outlet ></router-outlet>
+</div>
 
-<router-outlet></router-outlet>

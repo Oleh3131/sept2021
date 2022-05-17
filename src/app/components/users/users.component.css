@@ -1,5 +1,5 @@
 
-.users{
+.users {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,8 +7,22 @@
   background: #62d7ff;
   height: 100%;
   row-gap: 40px;
+  column-gap: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
   border: 5px solid gold;
   border-radius: 8px;
+  margin-top: 5px;
+}
+
+.user{
+  width: 17.5%;
+  height: 150px;
+}
+
+.mainUserDetails{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0 50px 0;
 }
