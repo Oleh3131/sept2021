@@ -1,3 +1,28 @@
-h1 {
-  background:gold;
+.header {
+  height: 150px;
+  background: #62d7ff;
+  border: 5px solid gold;
+  border-radius: 8px;
 }
+
+.headerInfo {
+  display: flex;
+  justify-content: center;
+  column-gap: 150px;
+  height: 150px;
+  align-items: center;
+}
+
+li {
+  cursor: pointer;
+  font-size: 24px;
+  font-style: italic;
+}
+a{
+  color: #3a0303;
+}
+
+li :hover{
+  color: #fc0101;
+}
+
