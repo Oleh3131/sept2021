@@ -1,1 +1,9 @@
-<p>post works!</p>
+<div>
+  <h1>userId: {{post.userId}}</h1>
+  <h3>id: {{post.id}}</h3>
+  <p>title:{{post.title}}</p>
+
+  <a [routerLink]="['post_details',post.id]">DETAILS</a>
+
+  <hr>
+</div>

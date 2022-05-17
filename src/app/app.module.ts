@@ -12,6 +12,7 @@ import {CommentComponent} from './components/comment/comment.component';
 import {RouterModule} from "@angular/router";
 import {HomeComponent} from './components/home/home.component';
 import {UserDetailsComponent} from './components/user-details/user-details.component';
+import { PostDetailsComponent } from './components/post-details/post-details.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {UserDetailsComponent} from './components/user-details/user-details.compo
     CommentsComponent,
     CommentComponent,
     HomeComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,13 @@ import {UserDetailsComponent} from './components/user-details/user-details.compo
           {path: 'user_details/:id', component: UserDetailsComponent}
         ]
       },
-
+      {
+        path: 'posts_page', component: PostsComponent,
+        children: [
+          {path: 'post_details/:id', component: PostDetailsComponent}
+        ]
+      },
+      {path: 'comments_page', component: CommentsComponent}
     ])
   ],
   providers: [],
