@@ -7,7 +7,8 @@ let routes: Routes = [
   {path: '', component: HomeComponent},
   {path:'users_page',loadChildren:() => import('./commponents/users/users.module').then(m =>m.UsersModule )},
   {path:'posts_page',loadChildren:() => import('./commponents/posts/posts.module').then(m=>m.PostsModule)},
-  {path:'comments_page',}
+  {path:'comments_page',loadChildren:() => import('./commponents/comments/comments.module').then(m=>m.CommentsModule)},
+  {path:'todos_page',loadChildren:() => import('./commponents/todos/todos.module').then(m=>m.TodosModule)}
 ]
 
 @NgModule({
