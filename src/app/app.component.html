@@ -1,1 +1,16 @@
-<h1>{{logo}}</h1>
+
+<div>
+  <ul>
+    <li><a [routerLink]="['']" >Home</a></li>
+    <li><a [routerLink]="['users_page']">Users</a></li>
+    <li><a [routerLink]="['posts_page']">Posts</a></li>
+    <li><a [routerLink]="['comments_page']">Comments</a></li>
+    <li><a [routerLink]="['todos_page']">Affairs</a></li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+
