@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 import {AppRoutingModule} from "./app-routing.module";
 import {HomeComponent} from "./commponents/home/home.component";
+import {declareI18nVariable} from "@angular/compiler/src/render3/view/i18n/util";
 
 
 @NgModule({
@@ -20,3 +21,4 @@ import {HomeComponent} from "./commponents/home/home.component";
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

@@ -1,4 +1,4 @@
-<div class="user">
+<div *ngIf="user">
 
   <h1>id: {{user.id}}</h1>
   <h3>name:{{user.name}}</h3>
@@ -8,4 +8,6 @@
   <a [routerLink]="['user_details',user.id]">DETAILS</a>
 
 </div>
+
+
 
