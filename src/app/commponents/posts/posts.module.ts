@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PostsRoutingModule } from './posts-routing.module';
 import {PostsComponent} from "./posts-component/posts-component.component";
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -12,7 +13,8 @@ import {PostsComponent} from "./posts-component/posts-component.component";
 ],
   imports: [
     CommonModule,
-    PostsRoutingModule
+    PostsRoutingModule,
+    HttpClientModule
   ]
 })
 export class PostsModule { }

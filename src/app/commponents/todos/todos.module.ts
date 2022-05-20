@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TodosRoutingModule } from './todos-routing.module';
 import {TodosComponent} from "./todos-component/todos-component.component";
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -12,7 +13,8 @@ import {TodosComponent} from "./todos-component/todos-component.component";
   ],
   imports: [
     CommonModule,
-    TodosRoutingModule
+    TodosRoutingModule,
+    HttpClientModule
   ]
 })
 export class TodosModule { }

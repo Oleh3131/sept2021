@@ -1,1 +1,3 @@
-<p>users-component works!</p>
+<app-user-component *ngFor="let user of users" [user]="user"></app-user-component>
+
+<router-outlet></router-outlet>
