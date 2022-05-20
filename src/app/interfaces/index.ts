@@ -6,3 +6,5 @@ export * from './user-details-interface'
 export * from './company-details-interface'
 export * from './geo-details-interface'
 export * from './address-details-interface'
+export * from './post-details-interface'
+

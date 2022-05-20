@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 
-import {IPost} from "../interfaces";
+import {IPost, IPostDetails} from "../interfaces";
 import {urls} from "../contains";
 
 @Injectable({
@@ -19,9 +19,9 @@ export class PostService {
 
   }
 
-  getById(id:string):Observable<IPost>{
+  getById(id:string):Observable<IPostDetails>{
 
-    return this.http.get<IPost>(`${urls.posts}/${id}`)
+    return this.http.get<IPostDetails>(`${urls.posts}/${id}`)
 
   }
 
