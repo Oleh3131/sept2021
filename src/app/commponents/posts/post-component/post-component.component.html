@@ -1,4 +1,4 @@
-<div *ngIf="post">
+<div *ngIf="post" class="post">
 
   <h1>userId: {{post.userId}}</h1>
   <h3>id: {{post.id}}</h3>
@@ -6,6 +6,11 @@
 
   <!--  МЕТОД ВІДОБРАЖЕННЯ ІНФИ ПРИ ЗВЕРНЕННІ ДО СЕРВІСУ і DDOS СЕРВЕРА-->
 
-  <a [routerLink]="['post_details',post.id]">DETAILS</a>
+  <div routerLinkActive="active">
+    <a [routerLink]="['post_details',post.id]">DETAILS</a>
+  </div>
+
 
 </div>
+
+

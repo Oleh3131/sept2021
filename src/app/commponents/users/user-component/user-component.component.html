@@ -1,4 +1,4 @@
-<div *ngIf="user">
+<div *ngIf="user" class="user">
 
   <h1>id: {{user.id}}</h1>
   <h3>name:{{user.name}}</h3>
@@ -7,7 +7,9 @@
 
 <!--  МЕТОД ВІДОБРАЖЕННЯ ІНФИ ПРИ ЗВЕРНЕННІ ДО СЕРВІСУ і DDOS СЕРВЕРА-->
 
-  <a [routerLink]="['user_details',user.id]">DETAILS</a>
+  <div routerLinkActive="active">
+    <a [routerLink]="['user_details',user.id]">DETAILS</a>
+  </div>
 
 </div>
 

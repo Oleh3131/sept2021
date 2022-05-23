@@ -1,3 +1,8 @@
-<app-user-component *ngFor="let user of users" [user]="user"></app-user-component>
+<div class="users">
+  <app-user-component *ngFor="let user of users" [user]="user" class="usersBlock"></app-user-component>
+</div>
 
-<router-outlet></router-outlet>
+<div class="usersDetailsBlock">
+  <router-outlet></router-outlet>
+</div>
+

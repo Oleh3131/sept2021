@@ -1,12 +1,20 @@
 
-<div>
-  <ul>
-    <li><a [routerLink]="['']" >Home</a></li>
-    <li><a [routerLink]="['users_page']">Users</a></li>
-    <li><a [routerLink]="['posts_page']">Posts</a></li>
-    <li><a [routerLink]="['comments_page']">Comments</a></li>
-    <li><a [routerLink]="['todos_page']">Affairs</a></li>
-  </ul>
+<div class="header">
+    <div routerLinkActive="active">
+      <a [routerLink]="['']">Home</a>
+    </div>
+    <div routerLinkActive="active">
+      <a [routerLink]="['users_page']">Users</a>
+    </div>
+    <div routerLinkActive="active">
+      <a [routerLink]="['posts_page']">Posts</a>
+    </div>
+    <div routerLinkActive="active">
+      <a [routerLink]="['comments_page']">Comments</a>
+    </div>
+    <div routerLinkActive="active">
+      <a [routerLink]="['todos_page']">Affairs</a>
+    </div>
 </div>
 
 <router-outlet></router-outlet>

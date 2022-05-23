@@ -1,3 +1,19 @@
-h1 {
-  background:gold;
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+  background: deepskyblue;
 }
+
+a {
+  font-size: 28px;
+  text-decoration: none;
+  color: snow;
+}
+
+.active a {
+  color: red;
+}
+

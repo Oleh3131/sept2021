@@ -1,0 +1,25 @@
+.posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #21a2e7;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 40px;
+  padding: 40px 0 40px 0;
+
+}
+
+.postsBlock{
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.postsDetailsBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #59afec;
+}

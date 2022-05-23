@@ -1,0 +1,21 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 20px;
+}
+
+.todoButton{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  cursor: pointer;
+  background: #59afec;
+  border: 2px solid white;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+}

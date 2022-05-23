@@ -1,4 +1,4 @@
-<div *ngIf="comment">
+<div *ngIf="comment" class="comment">
 
   <h1>postId:{{comment.postId}}</h1>
   <h4>id:{{comment.id}}</h4>
@@ -6,6 +6,8 @@
 
 <!--    МЕТОД ВІДОБРАЖЕННЯ ІНФИ ПРИ ПРОКИДУВАННІ ДАНИХ ЧЕРЕЗ URL-->
 
-  <a [routerLink]="['comment_details',comment.id]" [state]="{data:comment}" >DETAILS</a>
+  <div routerLinkActive="active">
+    <a [routerLink]="['comment_details',comment.id]" [state]="{data:comment}" >DETAILS</a>
+  </div>
 
 </div>

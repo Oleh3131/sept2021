@@ -1,3 +1,8 @@
-<app-comment-component *ngFor="let comment of comments" [comment]="comment"></app-comment-component>
 
-<router-outlet></router-outlet>
+<div class="comments">
+  <app-comment-component *ngFor="let comment of comments" [comment]="comment" class="commentsBlock"></app-comment-component>
+</div>
+
+<div class="commentsDetailsBlock">
+  <router-outlet></router-outlet>
+</div>

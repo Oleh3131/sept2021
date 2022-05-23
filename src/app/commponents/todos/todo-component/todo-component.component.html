@@ -1,4 +1,4 @@
-<div *ngIf="todo">
+<div *ngIf="todo" class="todo">
 
   <h1>userId: {{todo.userId}}</h1>
   <h4>id: {{todo.id}}</h4>
@@ -6,6 +6,9 @@
 
 <!--      МЕТОД ВІДОБРАЖЕННЯ ІНФИ ПРИ ВИКОРИСТАННІ ПОДІЇ ПРИ КЛІКУ НА КНОПКУ-->
 
-  <button (click)="getDetails()">DETAILS</button>
+  <div class="todoButton">
+    <button (click)="getDetails()">DETAILS</button>
+  </div>
+
 
 </div>

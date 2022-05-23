@@ -1,4 +1,18 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 20px;
+}
 
+a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
 
-
-
+.active a {
+  color: red;
+}

@@ -1,0 +1,8 @@
+.userDetailsInfo{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border:2px solid white;
+  border-radius: 6px;
+  row-gap: 10px;
+}

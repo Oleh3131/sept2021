@@ -1,3 +1,11 @@
-<app-todo-component *ngFor="let todo of todos" [todo]="todo"></app-todo-component>
+<div class="todos">
+  <app-todo-component *ngFor="let todo of todos" [todo]="todo" class="todosBlock"></app-todo-component>
+</div>
 
-<router-outlet></router-outlet>
+<div class="todosDetailsBlock">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+

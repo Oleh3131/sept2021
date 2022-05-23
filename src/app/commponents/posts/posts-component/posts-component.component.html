@@ -1,3 +1,8 @@
-<app-post-component *ngFor="let post of posts" [post]="post"></app-post-component>
 
-<router-outlet></router-outlet>
+<div class="posts">
+  <app-post-component *ngFor="let post of posts" [post]="post" class="postsBlock"></app-post-component>
+</div>
+
+<div class="postsDetailsBlock">
+  <router-outlet></router-outlet>
+</div>
