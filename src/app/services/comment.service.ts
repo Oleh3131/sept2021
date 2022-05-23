@@ -4,6 +4,7 @@ import {Observable} from "rxjs";
 
 import {IComment} from "../interfaces";
 import {urls} from "../contains";
+import {ICommentDetails} from "../interfaces/comment-details-interface";
 
 @Injectable({
   providedIn: 'root'
@@ -19,9 +20,9 @@ export class CommentService {
 
   }
 
-  getById(id:string):Observable<IComment>{
+  getById(id:string):Observable<ICommentDetails>{
 
-    return this.http.get<IComment>(`${urls.comments}/${id}`)
+    return this.http.get<ICommentDetails>(`${urls.comments}/${id}`)
 
   }
 

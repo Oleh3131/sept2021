@@ -1,1 +1,3 @@
-<p>comments-component works!</p>
+<app-comment-component *ngFor="let comment of comments" [comment]="comment"></app-comment-component>
+
+<router-outlet></router-outlet>

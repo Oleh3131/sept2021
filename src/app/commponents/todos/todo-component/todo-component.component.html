@@ -1,0 +1,11 @@
+<div *ngIf="todo">
+
+  <h1>userId: {{todo.userId}}</h1>
+  <h4>id: {{todo.id}}</h4>
+  <p>title: {{todo.title}}</p>
+
+<!--      МЕТОД ВІДОБРАЖЕННЯ ІНФИ ПРИ ВИКОРИСТАННІ ПОДІЇ ПРИ КЛІКУ НА КНОПКУ-->
+
+  <button (click)="getDetails()">DETAILS</button>
+
+</div>

@@ -4,6 +4,7 @@ import {Observable} from "rxjs";
 
 import {ITodos} from "../interfaces";
 import {urls} from "../contains";
+import {ITodoDetails} from "../interfaces/todo-details-interface";
 
 @Injectable({
   providedIn: 'root'
@@ -19,9 +20,9 @@ export class TodosService {
 
   }
 
-  getById(id:string):Observable<ITodos>{
+  getById(id:string):Observable<ITodoDetails>{
 
-    return this.http.get<ITodos>(`${urls.todos}/${id}`)
+    return this.http.get<ITodoDetails>(`${urls.todos}/${id}`)
 
   }
 
