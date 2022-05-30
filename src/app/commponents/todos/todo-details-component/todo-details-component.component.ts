@@ -13,28 +13,11 @@ export class TodoDetailsComponent implements OnInit {
 
   todoDetails: ITodoDetails;
 
-  constructor(private activatedRoute:ActivatedRoute,
-              private router:Router,
-              private todosService:TodosService
-              ) { }
+  constructor(private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
 
-    this.activatedRoute.params.subscribe(({id})=>{
-
-      const state = this.router.getCurrentNavigation()?.extras.state?.['todo'] as ITodoDetails;
-
-      if(state){
-
-        this.todoDetails = state;
-
-      } else {
-
-        this.todosService.getById(id).subscribe(value => this.todoDetails = value);
-
-      }
-
-    })
+    this.activatedRoute.data.subscribe(({todoData}) => this.todoDetails = todoData);
 
   }
 

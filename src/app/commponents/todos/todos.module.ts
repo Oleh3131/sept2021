@@ -7,6 +7,7 @@ import {TodosComponent} from "./todos-component/todos-component.component";
 import { TodoComponent} from './todo-component/todo-component.component';
 import {TodosService} from "../../services";
 import {TodoDetailsComponent,} from './todo-details-component/todo-details-component.component';
+import {TodoResolver, TodosResolver} from "../../resolvers";
 
 
 
@@ -22,7 +23,9 @@ import {TodoDetailsComponent,} from './todo-details-component/todo-details-compo
     HttpClientModule
   ],
   providers: [
-    TodosService
+    TodosService,
+    TodosResolver,
+    TodoResolver
   ]
 })
 export class TodosModule { }
