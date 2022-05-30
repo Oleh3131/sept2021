@@ -7,6 +7,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {PostComponent} from "./post-component/post-component.component";
 import {PostDetailsComponent} from "./post-details-component/post-details-component.component";
 import {PostService, UserService} from "../../services";
+import {PostResolver, PostsResolver} from "../../resolvers";
 
 
 
@@ -23,7 +24,9 @@ import {PostService, UserService} from "../../services";
     HttpClientModule
   ],
   providers:[
-    PostService
+    PostService,
+    PostResolver,
+    PostsResolver
   ]
 })
 export class PostsModule { }
