@@ -3,11 +3,16 @@ import {RouterModule, Routes} from '@angular/router';
 
 import {UsersComponent} from "./users-component/users-component.component";
 import {UserDetailsComponent} from "./user-details-component/user-details-component.component";
+import {UserResolver, UsersResolver} from "../../resolvers";
+
 
 const routes: Routes = [
   {
-    path: '', component: UsersComponent, children: [
-      {path: 'user_details/:id', component:UserDetailsComponent}
+    path: '', component: UsersComponent,
+    resolve: {usersData:UsersResolver},
+    children: [
+
+      {path: 'user_details/:id', component: UserDetailsComponent,resolve:{userData:UserResolver}}
 
     ]
   }

@@ -7,6 +7,8 @@ import {UsersComponent} from './users-component/users-component.component';
 import {UserComponent} from "./user-component/user-component.component";
 import {UserDetailsComponent,} from './user-details-component/user-details-component.component';
 import {UserService} from "../../services";
+import {UserResolver, UsersResolver} from "../../resolvers";
+
 
 
 
@@ -22,7 +24,9 @@ import {UserService} from "../../services";
     HttpClientModule
   ],
   providers:[
-    UserService
+    UserService,
+    UsersResolver,
+    UserResolver
   ]
 })
 export class UsersModule { }
