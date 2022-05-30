@@ -8,6 +8,7 @@ import {PostComponent} from "./post-component/post-component.component";
 import {PostDetailsComponent} from "./post-details-component/post-details-component.component";
 import {PostService, UserService} from "../../services";
 import {PostResolver, PostsResolver} from "../../resolvers";
+import {PostGuard} from "../../guards";
 
 
 
@@ -26,7 +27,8 @@ import {PostResolver, PostsResolver} from "../../resolvers";
   providers:[
     PostService,
     PostResolver,
-    PostsResolver
+    PostsResolver,
+    PostGuard
   ]
 })
 export class PostsModule { }

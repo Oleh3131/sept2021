@@ -8,6 +8,7 @@ import {UserComponent} from "./user-component/user-component.component";
 import {UserDetailsComponent,} from './user-details-component/user-details-component.component';
 import {UserService} from "../../services";
 import {UserResolver, UsersResolver} from "../../resolvers";
+import {UserGuard} from "../../guards";
 
 
 
@@ -26,7 +27,8 @@ import {UserResolver, UsersResolver} from "../../resolvers";
   providers:[
     UserService,
     UsersResolver,
-    UserResolver
+    UserResolver,
+    UserGuard
   ]
 })
 export class UsersModule { }
