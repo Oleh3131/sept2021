@@ -24,6 +24,7 @@ export class CommentService {
 
     return this.http.get<ICommentDetails>(`${urls.comments}/${id}`)
 
+
   }
 
 }
