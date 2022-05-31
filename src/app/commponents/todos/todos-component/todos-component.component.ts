@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {TodosService} from "../../../services";
 import {ITodos} from "../../../interfaces";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, ResolveEnd, ResolveStart, Router} from "@angular/router";
+import {filter, map} from "rxjs";
 
 @Component({
   selector: 'app-todos-component',
