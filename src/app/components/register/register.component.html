@@ -1,0 +1,16 @@
+<!--Створюємо звичайну форму
+Те що пимали в компоненті register.ts маємо підключити в цю форму.
+За це відповідає [FormGroup] і вказуємо нашу змінну "form"-->
+<!--Треба підключити кожен контролер до цих інпутів за це відповідає formControlName і вньому ми вказуємо
+ті ж самі назви котрі вказували в обєкті. І буде в нас якась кнопка-->
+
+<!--І тепрер у нас два варіанти як підхопити дані з цієї форми:
+1.Або ми прописуємо івент  [formGroup]="form" (ngSubmit)="";
+2.Або на кнопку вішаємо івент (click)="";-->
+
+<form [formGroup]="form">
+  <div><label>username:<input type="text" formControlName="username"></label></div>
+  <div><label>password:<input type="text" formControlName="password"></label></div>
+  <div><label>confirmPassword:<input type="text" formControlName="confirmPassword"></label></div>
+  <button>Register</button>
+</form>
