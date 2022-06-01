@@ -20,5 +20,4 @@ export class TodosComponent implements OnInit {
     this.activatedRoute.data.subscribe(({todosData}) => this.todos = todosData);
 
   }
-
 }
