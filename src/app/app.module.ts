@@ -34,4 +34,5 @@ import {MainInterceptor} from "./main.interceptor";
   bootstrap: [AppComponent]
 })
 export class AppModule {
+
 }
