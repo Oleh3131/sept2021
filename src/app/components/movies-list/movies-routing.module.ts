@@ -3,7 +3,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {MoviesComponent} from "./movies/movies.component";
 
 
-const routes:Routes=[
+let routes:Routes=[
 
   {path:'',component:MoviesComponent}
 
