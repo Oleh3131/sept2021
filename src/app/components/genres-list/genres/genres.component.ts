@@ -15,7 +15,7 @@ export class GenresComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.genresService.getAll().subscribe(value => console.log(value))
+    this.genresService.getAll().subscribe(({genres}) => this.genres=genres)
 
   }
 

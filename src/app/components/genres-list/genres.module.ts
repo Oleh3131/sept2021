@@ -6,10 +6,11 @@ import {HttpClientModule} from "@angular/common/http";
 import {GenresService} from "../../services/genres.service";
 import {GenresComponent} from "./genres/genres.component";
 import {GenreComponent} from "./genre/genre.component";
+import { GengeDetailsComponent } from './genge-details/genge-details.component';
 
 
 @NgModule({
-  declarations: [GenresComponent,GenreComponent],
+  declarations: [GenresComponent,GenreComponent, GengeDetailsComponent],
   imports: [
     CommonModule,
     GenresRoutingModule,

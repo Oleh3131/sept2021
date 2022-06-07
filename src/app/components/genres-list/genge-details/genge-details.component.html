@@ -1,0 +1,9 @@
+<div *ngIf="genreDetails">
+
+  <img src="https://image.tmdb.org/t/p/w300{{genreDetails.backdrop_path}}" alt="{{genreDetails.original_title}}"/>
+
+  <p>Budget:{{genreDetails.budget}}</p>
+  <p>{{genreDetails.original_title}}</p>
+  <p>Original language:{{genreDetails.original_language}}</p>
+
+</div>

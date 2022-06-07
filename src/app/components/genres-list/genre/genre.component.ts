@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {IGenres} from "../../../interfaces/genres";
+import {ActivatedRoute, Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-genre',
@@ -11,9 +13,16 @@ export class GenreComponent implements OnInit {
   @Input()
   genre: IGenres;
 
-  constructor() { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
   }
 
+  genre_selection(): void {
+    this.router.navigate([this.genre.id], {
+      relativeTo: this.activatedRoute,
+      state: {todo: this.genre}
+    })
+  }
 }

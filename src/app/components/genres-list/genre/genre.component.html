@@ -1,1 +1,11 @@
-<p>genre works!</p>
+<div *ngIf="genre">
+
+  <button (click)="genre_selection()">{{genre.name}}</button>
+
+  <div>
+
+    <router-outlet></router-outlet>
+
+  </div>
+
+</div>
